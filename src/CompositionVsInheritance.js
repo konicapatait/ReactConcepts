@@ -9,17 +9,17 @@ class CompositionVsInheritance extends React.Component {
             <div className="App">
                 <header className="App-header">
                     Composition V/s Inheritance
-            </header>
+                </header>
 
                 <header className="App-sub-header">
                     Inheritance
-            </header>
+                </header>
 
                 <Inheritance></Inheritance>
 
                 <header className="App-sub-header">
                     Composition
-            </header>
+                </header>
 
                 <Composition>
                     <React.Fragment>

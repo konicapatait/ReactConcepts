@@ -1,4 +1,4 @@
-import React from 'react';
+   import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
@@ -8,7 +8,8 @@ import { HashRouter, Route } from "react-router-dom";
 import BasicConcepts from './BasicConcepts';
 import LiftingStateUp from './LiftingStateUp';
 import CompositionVsInheritance from './CompositionVsInheritance';
-import HigherOrderComponents from './HigherOrderComponents';
+import HigherOrderComponents from './components/higherordercomponents/HigherOrderComponents';
+import LifecycleA from './components/reactlifecycle/LifecycleA';
 
 ReactDOM.render(
     <HashRouter>
@@ -18,6 +19,7 @@ ReactDOM.render(
         <Route path="/lifting-state-up" component={LiftingStateUp} />
         <Route path="/composition-vs-inheritance" component={CompositionVsInheritance} />
         <Route path="/higher-order-components" component={HigherOrderComponents} /> 
+        <Route path="/lifecycle" component={LifecycleA} /> 
         </>
     </HashRouter>, 
     

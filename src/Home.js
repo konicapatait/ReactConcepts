@@ -12,6 +12,7 @@ function Home() {
       <li><Link to='/lifting-state-up'>Lifting StateUp</Link></li>
       <li><Link to='/composition-vs-inheritance'>Composition v/s Inheritance</Link></li>
       <li><Link to='/higher-order-components'>Higher Order Components</Link></li>
+      <li><Link to='/lifecycle'>LifeCycle</Link></li>
       
     </div>
   );
