@@ -10,6 +10,11 @@ import LiftingStateUp from './LiftingStateUp';
 import CompositionVsInheritance from './CompositionVsInheritance';
 import HigherOrderComponents from './components/higherordercomponents/HigherOrderComponents';
 import LifecycleA from './components/reactlifecycle/LifecycleA';
+import RefMain from './components/refs/RefMain';
+import PortalParent from './components/portals/PortalParent';
+import EBParentComponent from './components/errorboundaries/EBParentComponent';
+import RenderPropsMain from './components/renderprops/RenderPropsMain';
+import ContextMain from './components/context/ContextMain';
 
 ReactDOM.render(
     <HashRouter>
@@ -20,6 +25,11 @@ ReactDOM.render(
         <Route path="/composition-vs-inheritance" component={CompositionVsInheritance} />
         <Route path="/higher-order-components" component={HigherOrderComponents} /> 
         <Route path="/lifecycle" component={LifecycleA} /> 
+        <Route path="/refs" component={RefMain} /> 
+        <Route path="/portal" component={PortalParent} />  
+        <Route path="/error-boundary" component={EBParentComponent} />  
+        <Route path="/render-props" component={RenderPropsMain} />  
+        <Route path="/context" component={ContextMain} />  
         </>
     </HashRouter>, 
     

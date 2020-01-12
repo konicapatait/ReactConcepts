@@ -4,13 +4,13 @@ import withCounter from './withCounter'
 class ClickCounterHOC extends React.Component {
 
     render() {
-        const {count, incrementCount} = this.props;
+        const {name, count, incrementCount} = this.props;
         return (
             <div className="App">
                 <header className="App-header">
                     Click Counter with HOC
                 </header>
-                <button onClick={incrementCount}>{this.props.name} Clicked {count} times!!</button>
+                <button onClick={incrementCount}>{name} Clicked {count} times!!</button>
 
             </div>
         )

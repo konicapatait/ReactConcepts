@@ -3,7 +3,8 @@ import React from 'react';
 /**
  * This is HOC that takes the component add the count and incrementCount functionality to the originalComponent as the prop. 
  * With these changes the state is managed in Higher order function and passed to original componnet as a props.
- * @param {*} OriginalComponent 
+ * 
+ * Other way to reuse the code is by using "render props".Refer: ../renderprops/
  */
 const withCounter = (OriginalComponent) => {   // With naming convention, OriginalComponet is called as 'WrappedComponent'
     class NewComponent extends React.Component {
@@ -23,7 +24,10 @@ const withCounter = (OriginalComponent) => {   // With naming convention, Origin
         }
     
         render() {
-            return <OriginalComponent name = 'Konica' count={this.state.count} incrementCount={this.incrementCount}/>
+            return <OriginalComponent 
+            count={this.state.count} 
+            incrementCount={this.incrementCount}
+            {...this.props}/>
         }
     }
     return NewComponent; // With naming convention, NewComponent is called as functionName but in PascalCase. Here it will be 'WithCounter'

@@ -46,8 +46,8 @@ class HigherOrderComponents extends React.Component {
             <>
                 <ClickCounter />
                 <HoverCounter />
-                <ClickCounterHOC />
-                <HoverCounterHOC />
+                <ClickCounterHOC name="Konica"/>
+                <HoverCounterHOC name="Anuj"/>
                 
             </>
         )

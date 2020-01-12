@@ -17,7 +17,7 @@ class ClickCounter extends React.Component {
     }
 
     render() {
-        const count = this.state.count;
+        const { count } = this.state;
         return (
             <div className="App">
                 <header className="App-header">

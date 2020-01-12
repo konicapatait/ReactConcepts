@@ -8,11 +8,16 @@ function Home() {
       <header className="App-header">
         Welcome Guest!!!!!  
       </header>
-      <li><Link to='/basic-concepts'>Basic Concepts</Link></li>
-      <li><Link to='/lifting-state-up'>Lifting StateUp</Link></li>
-      <li><Link to='/composition-vs-inheritance'>Composition v/s Inheritance</Link></li>
-      <li><Link to='/higher-order-components'>Higher Order Components</Link></li>
-      <li><Link to='/lifecycle'>LifeCycle</Link></li>
+      <h3><Link to='/basic-concepts'>1.) Basic Concepts</Link></h3>
+      <h3><Link to='/lifting-state-up'>2.) Lifting StateUp</Link></h3>
+      <h3><Link to='/composition-vs-inheritance'>3.) Composition v/s Inheritance</Link></h3>
+      <h3><Link to='/higher-order-components'>4.) Higher Order Components</Link></h3>
+      <h3><Link to='/lifecycle'>5.) LifeCycle</Link></h3>
+      <h3><Link to='/refs'>6.) Refs</Link></h3>
+      <h3><Link to='/portal'>7.) Portal</Link></h3>
+      <h3><Link to='/error-boundary'>8.) Error Boundary</Link></h3>
+      <h3><Link to='/render-props'>9.) Render Props</Link></h3>
+      <h3><Link to='/context'>10.) Context</Link></h3>
       
     </div>
   );

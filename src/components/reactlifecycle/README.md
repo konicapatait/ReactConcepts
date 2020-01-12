@@ -42,7 +42,10 @@ Any web application have 4 stages and react life cycle methods are as follows:
     * Can cause side effects
 
 ## Unmounting
--   componentWillUnmount
+-   componentWillUnmount()
+    * Method invoked immediately before a component is unmounted or destroyed
+    * Use Case: Cancelling any network requests, removing event handlers, cancelling any subscription or invalidating timers.
+    * Do not call setState method from thsi method.
 
 ## Error Handling
 -   static getDerivedStateFromError
