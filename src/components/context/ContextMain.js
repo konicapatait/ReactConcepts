@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ComponentC from './ComponentC';
 import { UserProvider } from './userContext';
+
 /**
  * `Context` is a way to pass the data down through the component 
  * tree without having to pass the props down manually to every level

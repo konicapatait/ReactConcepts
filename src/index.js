@@ -5,9 +5,9 @@ import * as serviceWorker from './serviceWorker';
 
 import Home from './Home';
 import { HashRouter, Route } from "react-router-dom";
-import BasicConcepts from './BasicConcepts';
-import LiftingStateUp from './LiftingStateUp';
-import CompositionVsInheritance from './CompositionVsInheritance';
+import BasicConcepts from './components/basic/BasicConcepts';
+import LiftingStateUp from './components/basic/LiftingStateUp';
+import CompositionVsInheritance from './components/compvsinheri/CompositionVsInheritance';
 import HigherOrderComponents from './components/higherordercomponents/HigherOrderComponents';
 import LifecycleA from './components/reactlifecycle/LifecycleA';
 import RefMain from './components/refs/RefMain';
@@ -15,6 +15,7 @@ import PortalParent from './components/portals/PortalParent';
 import EBParentComponent from './components/errorboundaries/EBParentComponent';
 import RenderPropsMain from './components/renderprops/RenderPropsMain';
 import ContextMain from './components/context/ContextMain';
+import HttpMain from './components/http/HttpMain';
 
 ReactDOM.render(
     <HashRouter>
@@ -30,6 +31,7 @@ ReactDOM.render(
         <Route path="/error-boundary" component={EBParentComponent} />  
         <Route path="/render-props" component={RenderPropsMain} />  
         <Route path="/context" component={ContextMain} />  
+        <Route path="/http" component={HttpMain} />  
         </>
     </HashRouter>, 
     

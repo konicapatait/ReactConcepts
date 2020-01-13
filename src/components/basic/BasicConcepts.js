@@ -1,6 +1,6 @@
 import React from 'react';
-import './App.css';
-import Label from "./components/Label"
+import '../../App.css';
+import Label from "../Label"
 /**
  * Basic Concepts display:
  * a.) How to work with props

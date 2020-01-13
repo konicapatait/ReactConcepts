@@ -1,7 +1,7 @@
 import React from 'react';
-import Inheritance from "./components/Inheritance"
-import Composition from "./components/Composition"
-import Label from "./components/Label"
+import Inheritance from "./Inheritance"
+import Composition from "./Composition"
+import Label from "../Label"
 
 class CompositionVsInheritance extends React.Component {
     render() {

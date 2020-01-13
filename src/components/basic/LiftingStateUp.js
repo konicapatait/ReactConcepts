@@ -1,5 +1,5 @@
 import React from "react";
-import Label from "./components/Label"
+import Label from "../Label"
 /**
  * This component will render two text fields to convert the weight. 
  * This component will store the entered value and the scale 
