@@ -16,6 +16,7 @@ import EBParentComponent from './components/errorboundaries/EBParentComponent';
 import RenderPropsMain from './components/renderprops/RenderPropsMain';
 import ContextMain from './components/context/ContextMain';
 import HttpMain from './components/http/HttpMain';
+import HooksMain from './components/hooks/HooksMain';
 
 ReactDOM.render(
     <HashRouter>
@@ -32,6 +33,7 @@ ReactDOM.render(
         <Route path="/render-props" component={RenderPropsMain} />  
         <Route path="/context" component={ContextMain} />  
         <Route path="/http" component={HttpMain} />  
+        <Route path="/hooks" component={HooksMain} />  
         </>
     </HashRouter>, 
     

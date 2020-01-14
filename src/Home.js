@@ -19,6 +19,7 @@ function Home() {
       <h3><Link to='/render-props'>9.) Render Props</Link></h3>
       <h3><Link to='/context'>10.) Context</Link></h3>
       <h3><Link to='/http'>10.) HTTP</Link></h3>
+      <h3><Link to='/hooks'>11.) Hooks</Link></h3>
       
     </div>
   );

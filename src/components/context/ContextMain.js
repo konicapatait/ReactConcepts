@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ComponentC from './ComponentC';
+import HookComponentTop from './HookComponentTop';
 import { UserProvider } from './userContext';
 
 /**
@@ -25,14 +26,17 @@ class ContextMain extends Component {
     render() {
         return (
             <div className="App">
+                <h3 className="App-header"> Context using Class</h3>
                 <h3> Value provided through Context</h3>
                 <UserProvider value="Konica">
-                    <ComponentC></ComponentC>
+                    <ComponentC />
                 </UserProvider>
 
                 <h3> Value not provided in Context</h3>
-                <ComponentC></ComponentC>
+                <ComponentC />
 
+                <h3 className="App-header">Context using Hooks</h3>
+                <HookComponentTop />
             </div>
         );
     }

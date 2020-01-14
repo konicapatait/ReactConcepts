@@ -19,13 +19,11 @@ class HttpPost extends Component {
             .catch(error => {
                 console.log(error)
             })
-
     }
 
     changeHandler = (e) => {
         this.setState({ [e.target.name]: e.target.value })
     }
-
 
     render() {
         const { title, body, userId } = this.state;

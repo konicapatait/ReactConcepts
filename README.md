@@ -10,3 +10,14 @@
 
 ```
 
+
+### Other Documents
+
+- [Hooks](./src/components/hooks/README.md)
+
+
+### Snippet shortcuts
+
+-   `rsfp` for Functional Components
+-   `rcc` for Class Components 
+
