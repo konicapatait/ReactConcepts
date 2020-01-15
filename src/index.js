@@ -17,6 +17,9 @@ import RenderPropsMain from './components/renderprops/RenderPropsMain';
 import ContextMain from './components/context/ContextMain';
 import HttpMain from './components/http/HttpMain';
 import HooksMain from './components/hooks/HooksMain';
+import UseStateMain from './components/hooks/useState/UseStateMain';
+import UseEffectHookMain from './components/hooks/useEffect/UseEffectHookMain';
+import UseReducerHookMain from './components/hooks/useReducer/UseReducerHookMain';
 
 ReactDOM.render(
     <HashRouter>
@@ -34,6 +37,9 @@ ReactDOM.render(
         <Route path="/context" component={ContextMain} />  
         <Route path="/http" component={HttpMain} />  
         <Route path="/hooks" component={HooksMain} />  
+        <Route path="/use-state" component={UseStateMain} />  
+        <Route path="/use-effect" component={UseEffectHookMain} />  
+        <Route path="/use-reducer" component={UseReducerHookMain} />  
         </>
     </HashRouter>, 
     

@@ -59,6 +59,13 @@ Hooks are the new feature in React `V16.8` that allow you to use React features 
     - Refer : [Context using Hooks](../context/HookComponentTop.js)
 
 -   `useReducer`
+    -   It is hook that is used for state management.
+    -   It is an alternative to `useState` and useState is built using useReducer.
+    -   `useReducer(reducer, initialState)` returns `currentState` and `dispatch` method
+
+        `reducer(currentState, action)` returns `newState`
+
+    -   `useReducer` is for local state management. To share the state between components i.e. Global state management, use `useReducer + useContext`
 
 -   `useCallback`
 

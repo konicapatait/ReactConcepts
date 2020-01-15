@@ -1,21 +1,12 @@
 import React from 'react';
-import CounterUsingHooks from './CounterUsingHooks';
-import HooksWithObject from './HooksWithObject';
-import HooksWithArray from './HooksWithArray';
-import UseEffectBasic from './UseEffectBasic';
-import UseEffectConditionally from './UseEffectConditionally';
-import MouseContainer from './MouseContainer';
 
+import { Link } from 'react-router-dom';
 function HooksMain(props) {
     return (
         <div>
-            <CounterUsingHooks />
-            <HooksWithObject />
-            <HooksWithArray />
-            <UseEffectBasic />
-            <UseEffectConditionally />
-            {/* <UseEffectOnlyOnce /> */}
-            <MouseContainer />
+            <h3><Link to='/use-state'>1.) Use State</Link></h3>
+            <h3><Link to='/use-effect'>2.) Use Effect</Link></h3>
+            <h3><Link to='/use-reducer'>3.) Use Reducer</Link></h3>
         </div>
     );
 }
