@@ -20,6 +20,10 @@ import HooksMain from './components/hooks/HooksMain';
 import UseStateMain from './components/hooks/useState/UseStateMain';
 import UseEffectHookMain from './components/hooks/useEffect/UseEffectHookMain';
 import UseReducerHookMain from './components/hooks/useReducer/UseReducerHookMain';
+import UseCallbackHookMain from './components/hooks/useCallback/UseCallbackHookMain';
+import UseMemoHookMain from './components/hooks/useMemo/UseMemoHookMain';
+import UseRefHookMain from './components/hooks/useRef/UseRefHookMain';
+import CustomHookMain from './components/hooks/customHook/CustomHookMain';
 
 ReactDOM.render(
     <HashRouter>
@@ -40,6 +44,10 @@ ReactDOM.render(
         <Route path="/use-state" component={UseStateMain} />  
         <Route path="/use-effect" component={UseEffectHookMain} />  
         <Route path="/use-reducer" component={UseReducerHookMain} />  
+        <Route path="/use-callback" component={UseCallbackHookMain} />
+        <Route path="/use-memo" component={UseMemoHookMain} />  
+        <Route path="/use-ref" component={UseRefHookMain} />  
+        <Route path="/custom-hook" component={CustomHookMain} />  
         </>
     </HashRouter>, 
     

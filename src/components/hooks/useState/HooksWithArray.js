@@ -11,7 +11,7 @@ function HooksWithArray(props) {
     }
     return (
         <div className="App">
-            <h3 className="App-header">UseState Hooks - using Array</h3>
+            <h3 className="App-sub2-header">Using Array</h3>
             <button onClick={addItem}>Add Item</button>
             {items.map(item => <li id={item.id}>{item.value}</li>)}
         </div>

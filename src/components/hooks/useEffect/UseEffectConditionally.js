@@ -19,8 +19,8 @@ function UseEffectConditionally(props) {
     }, [count])
     return (
         <div>
-            <div class="App-header">
-                <h3>UseEffect Hook - Conditionally</h3>
+            <div>
+                <h3 className="App-sub2-header">Conditionally</h3>
             </div>
             <div class="App">
                 <input

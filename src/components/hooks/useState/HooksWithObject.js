@@ -8,7 +8,7 @@ function HooksWithObject(props) {
         })
     return (
         <div className="App">
-            <h2 class="App-header">UseState Hook - using Objects</h2>
+            <h2 class="App-sub2-header">Using Objects</h2>
             <input
                 type="text"
                 name="fName"

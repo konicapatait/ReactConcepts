@@ -63,17 +63,34 @@ Hooks are the new feature in React `V16.8` that allow you to use React features 
     -   It is an alternative to `useState` and useState is built using useReducer.
     -   `useReducer(reducer, initialState)` returns `currentState` and `dispatch` method
 
-        `reducer(currentState, action)` returns `newState`
+        `reducer(state, action)` returns `newState`
 
     -   `useReducer` is for local state management. To share the state between components i.e. Global state management, use `useReducer + useContext`
 
+    | Scenario                  |  useState                 |    useReducer     |
+    | ------------------------- | -----------------------   |   --------------  |
+    | Type of state             | Number, String, Boolean   | Object or Array   |
+    | No. of state transaction  | One or two                | Too many          |
+    | Related state transations?| No                        | Yes               |
+    | Business logic            | No business logic         | Complex business Logic | 
+    | Local vs global           | Local                     | Global            |            
+
 -   `useCallback`
+    -   This hook will return a memorized version of the callback function that only changes if one of the dependencies has changed.
+    -   It is useful when passing callbacks to optimized child componnets that rely on reference equality to prevent unnecessary renders.
+    -   Performance optimization always come with cost. Refer: https://kentcdodds.com/blog/usememo-and-usecallback
 
 -   `useMemo`
+    -   This hook is similar to `useCallback`. The only difference is `useCallback`  memorize the provided function instance, whereas `useMemo` invokes the provided function and caches the result.
 
 -   `useRef`
+    -   The `useRef` hook is a function that returns a mutable ref object whose `.current` property is initialized to the passed argument.
+    - The `ref` object is a generic container whose current property is mutable and can hold any value, similar to an instance property on a class.
 
 -   `customHooks`
+    -  `customHook`  is basically a javascript function whose name starts with `use`.
+    -   It can call other Hooks if required.
+    -   Used to share logic between components - Alternative to `HOC` and `Render Props` 
 
 
 

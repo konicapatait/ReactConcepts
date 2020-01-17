@@ -5,6 +5,7 @@ import HooksWithArray from './HooksWithArray';
 function UseStateMain(props) {
     return (
         <div>
+            <h1 className="App-header">Use State</h1>
             <CounterUsingHooks />
             <HooksWithObject />
             <HooksWithArray />

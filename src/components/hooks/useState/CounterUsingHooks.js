@@ -22,7 +22,7 @@ function CounterUsingHooks(props) {
     }
     return (
         <div className="App">
-            <h2 class="App-header">UseState Hook - using previous state</h2>
+            <h2 class="App-sub2-header">Using previous state</h2>
             <div>Count: {count}</div>
             {/* <button onClick={() => setCount(count + 1)}>Increment</button>
             <button onClick={() => setCount(count - 1)}>Decrement</button> */}

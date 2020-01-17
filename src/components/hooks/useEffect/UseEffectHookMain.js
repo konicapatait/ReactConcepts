@@ -7,6 +7,7 @@ import MouseContainer from './MouseContainer';
 function UseEffectHookMain(props) {
     return (
         <div>
+            <h1 className="App-header">Use Effect</h1>
             <UseEffectBasic />
             <UseEffectConditionally />
             {/* <UseEffectOnlyOnce /> */}

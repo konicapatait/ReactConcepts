@@ -29,7 +29,7 @@ function UseReducerComplex(props) {
     return (
         <>
             <div>
-                <h3 className="App-header">Use Reducer Hook - Using complex state and action</h3>
+                <h3 className="App-sub2-header">Using complex state and action</h3>
                 <div>Counter 1:- {count.counterOne}</div>
                 <div>Counter 2:- {count.counterTwo}</div>
                 <button onClick={() => dispatch({ type: "increment", value: 2 })}>Increment Counter 1</button>

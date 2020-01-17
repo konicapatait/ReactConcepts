@@ -34,7 +34,7 @@ function UseEffectOnlyOnce(props) {
     }, [])
     return (
         <div>
-            <h3 className="App-sub-header">UseEffect - OnlyOnce</h3>
+            <h3 className="App-sub2-header">OnlyOnce</h3>
             X-cordinate is {X} ; Y-cordinate is {Y}
         </div>
     );

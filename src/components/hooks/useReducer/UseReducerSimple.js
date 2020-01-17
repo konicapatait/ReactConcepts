@@ -18,7 +18,7 @@ function UseReducerSimple(props) {
     const [count, dispatch] = useReducer(reducer, initialState)
     return (
         <div >
-            <h3 className="App-header">Use Reducer Hook - Using simple state and action</h3>
+            <h3 className="App-sub2-header">Using simple state and action</h3>
             Count: {count}
             <button onClick={() => dispatch("increment")}>Increment</button>
             <button onClick={() => dispatch("decrement")}>Decrement</button>
