@@ -13,6 +13,7 @@
 
 ### Other Documents
 
+- [React Lifecycle](./src/components/reactlifecycle/README.md)
 - [Hooks](./src/components/hooks/README.md)
 
 

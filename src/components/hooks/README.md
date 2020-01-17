@@ -4,15 +4,15 @@ Hooks are the new feature in React `V16.8` that allow you to use React features 
 
 - Example: `State` of the component
 
-- Hooks don't work inside classes
+- Hooks doesn't work inside classes
 
-- Hooks don't replace your existing knowledge of React concepts. Instead, Hooks provide a more direct API to the React concepts you already know.
+- Hooks doesn't replace your existing knowledge of react concepts. Instead, hooks provide a more direct API to the react concepts you already know.
 
 
 ## Why Hooks?
 -   Understand how `this` keyword works in JavaScript.
     -   Remember to bind event handlers in Class component.
-    -   Classes don' minify well and makes hot reloading very unreliable.
+    -   Classes don't minify well and makes hot reloading very unreliable.
 
 -   There is no particular way to reuse stateful component logic. `HOC` and `render props pattern` do address this problem but makes the code complex. There is a need to share stateful logic in a better way.
 
@@ -20,7 +20,7 @@ Hooks are the new feature in React `V16.8` that allow you to use React features 
     -   Data fetching - In componentDidMount and componentDidUpdate
     -   Event Listeners - In componentDidMount and componentWillUnmount
 
-- Because of stateful logic it is sometime immpossible to break it down into smaller ones.
+- Because of stateful logic it is sometime impossible to break it down into smaller ones.
 
 ## Rules of Hooks
 -   `Only call Hooks at the Top level`
@@ -28,11 +28,11 @@ Hooks are the new feature in React `V16.8` that allow you to use React features 
 
 -   `Only call the Hooks from the React functions` 
 
--   Use previos state to modify the state of component (Good to have; avoid errors)
+-   Use previous state to modify the state of component (Good to have; avoid errors)
 
 ## Note
 
--   setState in class components will merge the state wheras useState hook does not merge the state. ALWAYS ALWAYS use spread operator.
+-   `setState` in class components will merge the state whereas `useState` hook does not merge the state. <b>ALWAYS ALWAYS</b> use spread operator.
 
 
 
@@ -51,7 +51,7 @@ Hooks are the new feature in React `V16.8` that allow you to use React features 
     -   To ensure that `useEffect` just called ones, pass second attribute as empty array.
     -   To execute cleanup functions i.e. implementing 
     `componentWillUnmount` in class component, return a function from `useEffect` that will execute when component will unmount  and perform cleanup like unregistering the listeners etc.
-    -   Better to use multiple `useEffect` in a component rather than having a single `useEffect` dealing with all the states in a componnet. That will group the related code together and looks much more organized
+    -   Better to use multiple `useEffect` in a component rather than having a single `useEffect` dealing with all the states in a componet. That will group the related code together and looks much more organized.
 
 -   `useContext`
     -   `Context` is a way to pass the data down through the component tree without having to pass the props down manually to every level
@@ -59,8 +59,8 @@ Hooks are the new feature in React `V16.8` that allow you to use React features 
     - Refer : [Context using Hooks](../context/HookComponentTop.js)
 
 -   `useReducer`
-    -   It is hook that is used for state management.
-    -   It is an alternative to `useState` and useState is built using useReducer.
+    -   `useReducer` is used for state management.
+    -   It is an alternative to `useState`;  useState is built using useReducer.
     -   `useReducer(reducer, initialState)` returns `currentState` and `dispatch` method
 
         `reducer(state, action)` returns `newState`
@@ -76,8 +76,8 @@ Hooks are the new feature in React `V16.8` that allow you to use React features 
     | Local vs global           | Local                     | Global            |            
 
 -   `useCallback`
-    -   This hook will return a memorized version of the callback function that only changes if one of the dependencies has changed.
-    -   It is useful when passing callbacks to optimized child componnets that rely on reference equality to prevent unnecessary renders.
+    -   `useCallback` returns a memorized version of the callback function that only changes if one of the dependencies has changed.
+    -   It is useful when passing callbacks to optimized child components that rely on reference equality to prevent unnecessary renders.
     -   Performance optimization always come with cost. Refer: https://kentcdodds.com/blog/usememo-and-usecallback
 
 -   `useMemo`
@@ -89,8 +89,8 @@ Hooks are the new feature in React `V16.8` that allow you to use React features 
 
 -   `customHooks`
     -  `customHook`  is basically a javascript function whose name starts with `use`.
-    -   It can call other Hooks if required.
-    -   Used to share logic between components - Alternative to `HOC` and `Render Props` 
+    -   It can call other hooks if required.
+    -   Used to share logic between components - It is an alternative to `HOC` and `Render Props` 
 
 
 
